@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calentamiento Global</title>
+    <!-- favicon-16x16.png -->
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='favicon-16x16.png') }}">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e8f5e9; /* Color verde suave */
+            color: #2e7d32; /* Color verde oscuro */
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #1b5e20; /* Verde más oscuro para el título */
+            text-align: center;
+        }
+        h2 {
+            color: #388e3c;
+        }
+        p {
+            line-height: 1.6;
+            font-size: 1.1em;
+        }
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .source {
+            font-size: 0.9em;
+            color: #4caf50;
+            margin-top: 10px;
+        }
+        .footer {
+            margin-top: 30px;
+            text-align: center;
+            color: #81c784;
+        }
+    </style>
+</head>
+<body>
+    <h1>El Calentamiento Global</h1>
+
+    <h2>¿Qué es el calentamiento global?</h2>
+    <p>
+        El calentamiento global se refiere al aumento continuo de la temperatura promedio de la atmósfera terrestre y los océanos, un fenómeno que está estrechamente relacionado con las actividades humanas y el aumento de las emisiones de gases de efecto invernadero. Según la <a href="https://es.wikipedia.org/wiki/Calentamiento_global" target="_blank">Wikipedia</a>, el cambio climático es una de las mayores amenazas para la vida en la Tierra.
+    </p>
+
+    <div class="image-container">
+        <img src="{{ url_for('static', filename='earth_warming.jpg') }}" alt="Planeta Tierra con calentamiento global" width="500">
+        <p class="source">Fuente: NASA</p>
+    </div>
+
+    <h2>Consecuencias del Calentamiento Global</h2>
+    <p>
+        Algunas de las principales consecuencias del calentamiento global incluyen:
+        <ul>
+            <li>Aumento del nivel del mar</li>
+            <li>Fenómenos meteorológicos extremos (huracanes, sequías)</li>
+            <li>Extinción de especies debido a la pérdida de hábitats</li>
+            <li>Impactos en la agricultura y la seguridad alimentaria</li>
+        </ul>
+        Según la <a href="https://www.un.org/es/climatechange" target="_blank">ONU</a>, si no se toman medidas urgentes, estas consecuencias empeorarán significativamente en los próximos años.
+    </p>
+
+    <div class="image-container">
+        <img src="{{ url_for('static', filename='melting_ice.jpg') }}" alt="Deshielo en los polos" width="500">
+        <p class="source">Fuente: National Geographic</p>
+    </div>
+
+    <h2>¿Qué podemos hacer?</h2>
+    <p>
+        Para combatir el calentamiento global, es esencial reducir las emisiones de gases de efecto invernadero. Algunas acciones incluyen:
+        <ul>
+            <li>Usar energías renovables (solar, eólica)</li>
+            <li>Reducir el uso de combustibles fósiles</li>
+            <li>Conservar y restaurar ecosistemas naturales</li>
+            <li>Mejorar la eficiencia energética en edificios y transporte</li>
+        </ul>
+        Puedes encontrar más información sobre lo que puedes hacer para ayudar en esta <a href="https://www.greenpeace.org/international/tag/climate-crisis/" target="_blank">fuente externa</a>.
+    </p>
+
+    <div class="footer">
+        <p>Página creada como proyecto educativo sobre Flask y calentamiento global.</p>
+    </div>
+</body>
+</html>
